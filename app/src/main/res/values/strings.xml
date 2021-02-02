@@ -10,8 +10,10 @@
 
     <!-- RecycleView String -->
     <string name="vertical_list">vertical</string>
-    <string name="Detail_list">Detail</string>
-    <string name="List">List</string>
+    <string name="horizontal_list">horizontal</string>
+
+    <string name="vertical_grid">vertical grid</string>
+    <string name="horizontal_grid">horizontal grid</string>
     <!-- RecycleView String -->
     <!-- LinearLayout String -->
     <string name="Cut">Cut</string>

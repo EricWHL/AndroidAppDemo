@@ -26,20 +26,29 @@
                 />
 
             <Button
-                android:id="@+id/Detail_list"
+                android:id="@+id/horizontal_list"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:text="@string/Detail_list"
+                android:text="@string/horizontal_list"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/vertical_grid"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/vertical_grid"
                 android:textAllCaps="false"
                 android:layout_weight="1"
                 android:onClick="onClick"
                 />
 
             <Button
-                android:id="@+id/List"
+                android:id="@+id/horizontal_grid"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:text="@string/List"
+                android:text="@string/horizontal_grid"
                 android:textAllCaps="false"
                 android:layout_weight="1"
                 android:onClick="onClick"
