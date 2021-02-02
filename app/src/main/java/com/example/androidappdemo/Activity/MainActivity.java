@@ -64,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.TableLayout:
                 Log.d(TAG,"TableLayout button clicked");
                 break;
-
+            case R.id.BRVAH:
+                Log.d(TAG,"BRVAH button clicked");
+                break;
             default:
                 break;
         }

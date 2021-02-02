@@ -7,6 +7,7 @@
     <string name="AbsoluteLayout">AbsoluteLayout</string>
     <string name="FrameLayout">FrameLayout</string>
     <string name="TableLayout">TableLayout</string>
+    <string name="BRVAH">BRVAH</string>
 
     <!-- RecycleView String -->
     <string name="vertical_list">vertical</string>
