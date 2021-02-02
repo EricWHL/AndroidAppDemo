@@ -14,16 +14,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidappdemo.R;
 
+import butterknife.BindView;
+
 public class EditorActivity extends AppCompatActivity {
     final String TAG = "EditorActivity";
-    private EditText mText;
+
+    @BindView(R.id.Editor)
+    EditText mText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
         Log.d(TAG,"onCreate");
-        mText = (EditText)findViewById(R.id.Editor);
     }
 
     @Override

@@ -32,10 +32,8 @@ public class RAdapter extends RecyclerView.Adapter<RAdapter.ViewHolder> {
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //获取到position
-                int layoutPosition = holder.getLayoutPosition();
-                //土司
-                Toast.makeText(view.getContext(),"This is item :"+layoutPosition,Toast.LENGTH_SHORT).show();
+                //Toast
+                Toast.makeText(view.getContext(),"This is item :"+holder.text.getText(),Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -43,10 +41,8 @@ public class RAdapter extends RecyclerView.Adapter<RAdapter.ViewHolder> {
         holder.text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //获取到position
-                int layoutPosition = holder.getLayoutPosition();
-                //土司
-                Toast.makeText(view.getContext(),"This is textView :"+layoutPosition,Toast.LENGTH_SHORT).show();
+                //Toast
+                Toast.makeText(view.getContext(),"This is textView :"+holder.text.getText(),Toast.LENGTH_SHORT).show();
             }
         });
 
