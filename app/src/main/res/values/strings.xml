@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AppDemo</string>
+    <string name="Layout">Layout</string>
+    <string name="RecycleView">RecycleView</string>
+    <string name="LinearLayout">LinearLayout</string>
+    <string name="RelativeLayout">RelativeLayout</string>
+    <string name="AbsoluteLayout">AbsoluteLayout</string>
+    <string name="FrameLayout">FrameLayout</string>
+    <string name="TableLayout">TableLayout</string>
+
+    <!-- RecycleView String -->
+
+    <!-- RecycleView String -->
+    <!-- LinearLayout String -->
+    <string name="Cut">Cut</string>
+    <string name="Copy">Copy</string>
+    <string name="Undo">Undo</string>
+    <string name="Redo">Redo</string>
+    <!-- LinearLayout String -->
+    <!-- RelativeLayout String -->
+
+    <!-- RelativeLayout String -->
+    <!-- AbsoluteLayout String -->
+
+    <!-- AbsoluteLayout String -->
+    <!-- FrameLayout String -->
+
+    <!-- FrameLayout String -->
+    <!-- LinearLayout String -->
+
+    <!-- LinearLayout String -->
+
+</resources>

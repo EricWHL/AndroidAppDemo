@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditorActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"  >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Cut"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/Cut"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/Copy"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/Copy"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/Undo"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/Undo"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/Redo"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/Redo"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Editor"
+            android:hint = "please input words"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textAlignment="textStart"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
