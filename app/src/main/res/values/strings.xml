@@ -9,7 +9,9 @@
     <string name="TableLayout">TableLayout</string>
 
     <!-- RecycleView String -->
-
+    <string name="vertical_list">vertical</string>
+    <string name="Detail_list">Detail</string>
+    <string name="List">List</string>
     <!-- RecycleView String -->
     <!-- LinearLayout String -->
     <string name="Cut">Cut</string>
