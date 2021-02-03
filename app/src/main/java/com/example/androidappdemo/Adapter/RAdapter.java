@@ -14,10 +14,10 @@ import java.util.List;
 
 public class RAdapter extends RecyclerView.Adapter<RAdapter.ViewHolder> {
     //动态数组
-    private List<ListItem> mList;
+    private List<ListRItem> mList;
 
     //构造
-    public RAdapter(List<ListItem> mList) {
+    public RAdapter(List<ListRItem> mList) {
         this.mList = mList;
     }
 
@@ -53,9 +53,9 @@ public class RAdapter extends RecyclerView.Adapter<RAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         //获取当前实体类对象
-        ListItem vo = mList.get(position);
+        ListRItem vo = mList.get(position);
         //设置
-        holder.text.setText(vo.getName());
+        holder.text.setText(vo.getTitle());
         holder.img.setImageResource(vo.getImg());
     }
 

@@ -19,7 +19,6 @@ import butterknife.BindView;
 public class EditorActivity extends AppCompatActivity {
     final String TAG = "EditorActivity";
 
-    @BindView(R.id.Editor)
     EditText mText;
 
     @Override
@@ -27,6 +26,7 @@ public class EditorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
         Log.d(TAG,"onCreate");
+        mText = (EditText)findViewById(R.id.Editor);
     }
 
     @Override

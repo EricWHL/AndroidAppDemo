@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.BRVAH:
                 Log.d(TAG,"BRVAH button clicked");
+                Intent b_intent = new Intent(MainActivity.this,BrvahActivity.class);
+                startActivity(b_intent);
                 break;
             default:
                 break;

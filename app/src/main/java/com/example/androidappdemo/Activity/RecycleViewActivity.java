@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.example.androidappdemo.Adapter.ListItem;
+import com.example.androidappdemo.Adapter.;
 import com.example.androidappdemo.Adapter.RAdapter;
 import com.example.androidappdemo.R;
 
@@ -29,7 +29,7 @@ public class RecycleViewActivity extends Activity {
     StaggeredGridLayoutManager mGridLayoutMgr;
 
     private RecyclerView mView;
-    private List<ListItem> mList = new ArrayList<ListItem>();
+    private List<ListRItem> mList = new ArrayList<ListRItem>();
     private RAdapter mAdapter;
 
     @Override
@@ -102,7 +102,7 @@ public class RecycleViewActivity extends Activity {
 
     private void addData() {
         for (int i = 0 ; i<50 ; i++){
-            ListItem item = new ListItem(R.mipmap.ic_launcher, i + ":Hello World!");
+            ListRItem item = new ListRItem(R.mipmap.ic_launcher, i + ":Hello World!");
             //添加到数组
             mList.add(item);
             item = null;

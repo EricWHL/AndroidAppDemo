@@ -1,27 +1,27 @@
 package com.example.androidappdemo.Adapter;
 
-public class ListItem {
+class ListRItem {
     private int mImg;
-    private String mName;
+    private String mTitle;
 
-    public ListItem(int mImg, String mName) {
+    public ListRItem(int mImg, String title) {
         this.mImg = mImg;
-        this.mName = mName;
+        this.mTitle = title;
     }
 
     public void setImg(int mImg) {
         this.mImg = mImg;
     }
 
-    public void setName(String mName) {
-        this.mName = mName;
+    public void setTitle(String mName) {
+        this.mTitle = mName;
     }
 
     public int getImg() {
         return mImg;
     }
 
-    public String getName() {
-        return mName;
+    public String getTitle() {
+        return mTitle;
     }
 }
