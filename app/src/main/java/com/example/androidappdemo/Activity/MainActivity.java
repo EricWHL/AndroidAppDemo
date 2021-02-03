@@ -1,7 +1,6 @@
 package com.example.androidappdemo.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -68,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG,"BRVAH button clicked");
                 Intent b_intent = new Intent(MainActivity.this,BrvahActivity.class);
                 startActivity(b_intent);
+                break;
+            case R.id.Fragment:
+                Log.d(TAG,"Fragment button clicked");
+                Intent fr_intent = new Intent(MainActivity.this, FragmentMainActivity.class);
+                startActivity(fr_intent);
                 break;
             default:
                 break;
