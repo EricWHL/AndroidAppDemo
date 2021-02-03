@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.example.androidappdemo.Adapter.;
+import com.example.androidappdemo.Adapter.ListRItem;
 import com.example.androidappdemo.Adapter.RAdapter;
 import com.example.androidappdemo.R;
 

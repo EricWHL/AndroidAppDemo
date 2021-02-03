@@ -1,6 +1,6 @@
 package com.example.androidappdemo.Adapter;
 
-class ListRItem {
+public class ListRItem {
     private int mImg;
     private String mTitle;
 
