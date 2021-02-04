@@ -59,6 +59,9 @@
     <!-- LinearLayout String -->
 
     <!-- Fragment String -->
-    <string name="fg_Title">Chat Box</string>
+    <string name="fg_Title">iChat</string>
+    <string name="name">Name</string>
+    <string name="chat_content">Chat Contents</string>
+
     <!-- Fragment String -->
 </resources>

@@ -66,6 +66,15 @@ public class TitleFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_title, container, false);
+        mTitleBtn = (ImageButton) mView.findViewById(R.id.id_title_btn);
+        mTitleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(),
+                        "i am an ImageButton in TitleFragment ! ",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         return mView;
@@ -74,14 +83,6 @@ public class TitleFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-//        mTitleBtn = (ImageButton) mView.findViewById(R.id.id_title_btn);
-//        mTitleBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(getActivity(),
-//                        "i am an ImageButton in TitleFragment ! ",
-//                        Toast.LENGTH_SHORT).show();
-//            }
-//        });
+
     }
 }
