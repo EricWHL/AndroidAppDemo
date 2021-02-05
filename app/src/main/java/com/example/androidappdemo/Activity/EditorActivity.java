@@ -1,7 +1,5 @@
 package com.example.androidappdemo.Activity;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -12,9 +10,11 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.androidappdemo.Common.Global;
 import com.example.androidappdemo.R;
+import com.example.androidappdemo.Utils.MessageEvent;
 
-import butterknife.BindView;
+import org.greenrobot.eventbus.EventBus;
 
 public class EditorActivity extends AppCompatActivity {
     final String TAG = "EditorActivity";
@@ -56,16 +56,19 @@ public class EditorActivity extends AppCompatActivity {
         switch(v.getId()) {
             case R.id.Cut:
                 Log.d(TAG,"Cut button clicked");
+                EventBus.getDefault().post(new MessageEvent(Global.EventID.EVENT_EDIT_CUT,"Cut contents"));
                 break;
             case R.id.Copy:
                 Log.d(TAG,"Copy button clicked");
-
+                EventBus.getDefault().post(new MessageEvent(Global.EventID.EVENT_EDIT_COPY,"Copy contents"));
                 break;
             case R.id.Undo:
                 Log.d(TAG,"Undo button clicked");
+                EventBus.getDefault().post(new MessageEvent(Global.EventID.EVENT_EDIT_UNDO,"Undo contents"));
                 break;
             case R.id.Redo:
                 Log.d(TAG,"Redo button clicked");
+                EventBus.getDefault().post(new MessageEvent(Global.EventID.EVENT_EDIT_REDO,"Redo contents"));
                 break;
 
             default:

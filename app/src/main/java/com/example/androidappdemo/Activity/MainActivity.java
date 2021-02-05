@@ -1,13 +1,18 @@
 package com.example.androidappdemo.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.androidappdemo.R;
+import com.example.androidappdemo.Utils.MessageEvent;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 public class MainActivity extends AppCompatActivity {
     final String TAG = "MainActivity";
@@ -18,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d(TAG,"onCreate");
         setTitle("Main View");
+        EventBus.getDefault().register(this);
     }
 
     @Override
@@ -36,6 +42,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d(TAG,"onResume");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG,"onDestroy");
+        EventBus.getDefault().removeAllStickyEvents();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void messageRecevied(MessageEvent msg) {
+        Log.d(TAG,"messageRecevied " + "id:" + msg.getEventId() + " message:" + msg.getMessage());
     }
 
     public void onClick(View v) {
